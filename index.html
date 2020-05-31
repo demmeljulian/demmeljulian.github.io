@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<style media="screen">
+   @import url("https://use.typekit.net/bpq2ybf.css");
+
+   html {
+      background-color: #089960;
+      background-image:
+         repeating-linear-gradient(45deg,
+         rgba(0, 0, 0, 0.8),
+         rgba(0, 0, 0, 0.8) 100px,
+         transparent 0px,
+         transparent 200px),
+         repeating-linear-gradient(-45deg,
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5) 100px,
+         transparent 0px,
+         transparent 200px);
+      animation: color 3s infinite;
+   }
+
+   body {
+      display: grid;
+      margin: 0;
+      place-items: center;
+      font-family: sans-serif;
+   }
+
+   header {
+      background: #fffdcd;
+      max-width: 540px;
+      outline: 10px solid #DDD455;
+      margin: 60px 30px;
+   }
+
+   h1 {
+      color: #ff0087;
+      font-size: 48px;
+      font-family: le-monde-livre-std, serif;
+      font-weight: 700;
+      font-style: normal;
+      margin-bottom: 0;
+      text-shadow: 0 0 10px #FF0000;
+      animation: glow 2s infinite;
+      animation: scale 2s infinite;
+   }
+
+   h2 {
+      color: #ff0087;
+      font-family: shelby, sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      margin-top: 0;
+      font-style: normal;
+      text-shadow: 0 0 10px #FF0000;
+      animation: glow 2s infinite;
+      margin-bottom: 0;
+   }
+
+   @keyframes shadow-pulse {
+      0% {
+         box-shadow: 0 0 0 0px rgba(119, 7, 128, 0.5);
+      }
+
+      100% {
+         box-shadow: 0 0 0 35px rgba(119, 7, 128, 0);
+      }
+   }
+
+   @keyframes color {
+      0% {
+         background-color: #089960;
+         background-image:
+            repeating-linear-gradient(45deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8) 100px,
+            transparent 0px,
+            transparent 200px),
+            repeating-linear-gradient(-45deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5) 100px,
+            transparent 0px,
+            transparent 200px);
+
+      }
+
+      50% {
+         background-color: #C72C2E;
+         background-image:
+            repeating-linear-gradient(90deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8) 100px,
+            transparent 0px,
+            transparent 200px),
+            repeating-linear-gradient(-90deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5) 100px,
+            transparent 0px,
+            transparent 200px);
+      }
+
+      100% {
+         background-color: #089960;
+         background-image:
+            repeating-linear-gradient(45deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8) 100px,
+            transparent 0px,
+            transparent 200px),
+            repeating-linear-gradient(-45deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5) 100px,
+            transparent 0px,
+            transparent 200px);
+
+      }
+   }
+
+   @keyframes img {
+      0% {
+         filter: hue-rotate(10deg);
+         transform: rotate(0deg);
+      }
+
+      50% {
+         filter: hue-rotate(360deg);
+
+      }
+
+      100% {
+         filter: hue-rotate(10deg);
+         transform: rotate(360deg);
+      }
+   }
+
+   @keyframes glow {
+      0% {
+         text-shadow: 0 0 10px #FF0000;
+      }
+
+      50% {
+         text-shadow: 0 0 40px #FF0000;
+      }
+
+      100% {
+         text-shadow: 0 0 10px #FF0000;
+      }
+   }
+
+   @keyframes scale {
+      0% {
+         transform: scale(1);
+      }
+
+      50% {
+         transform: scale(1.2);
+      }
+
+      100% {
+         transform: scale(1);
+      }
+   }
+
+   @keyframes button {
+      0% {
+         transform: scale(1);
+      }
+
+      50% {
+         transform: scale(1.2);
+      }
+
+      100% {
+         transform: scale(1);
+      }
+   }
+
+   .wrapper {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+   }
+
+   .content {
+      padding: 1em;
+      display: inline-block;
+   }
+
+
+   .button {
+      float: left;
+      width: 130px;
+      height: 60px;
+      font-family: le-monde-livre-std, serif;
+      font-weight: 700;
+      font-size: 18px;
+      font-style: normal;
+      line-height: 60px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #fff;
+      text-align: center;
+      background: rgba(119, 7, 128, 1);
+      width: 100%;
+      animation: shadow-pulse 1s infinite;
+      border-radius: 30px;
+   }
+
+   .text {
+      text-align: center;
+      margin: 50px 0 20px 0;
+      transform: rotate(-10deg);
+      overflow: hidden;
+   }
+
+   .product-image {
+      max-height: 260px;
+      padding: 1em;
+      margin-bottom: 40px;
+      animation: img 3s linear infinite;
+   }
+
+   .big-emoji {
+      font-size: 28px;
+      line-height: 60px;
+   }
+
+   .features {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px #FF0000;
+   }
+
+   .features span {
+      display: inline-block;
+      width: 100%;
+      text-transform: uppercase;
+      font-family: le-monde-livre-std, serif;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 3px;
+      font-style: normal;
+      line-height: 30px;
+   }
+</style>
+
+<html>
+
+<body>
+   <header>
+      <div class="text">
+         <h1>
+            GARTEN<br>SCHLAUCH
+         </h1>
+         <h2>
+            Designed by<br>Julan Klein
+         </h2>
+      </div>
+
+
+      <div class="wrapper">
+         <div class="content">
+            <img class="product-image" src="schlauch.png">
+            <div class="features">
+               <span>&#128181; Billig & willig &#128069;</span>
+               <span>&#128166; Spritzig & witzig &#129315;</span>
+               <span>&#127814; Gesund & bunt &#127813;</span>
+               <span>&#128089; One size fits all &#129421;</span>
+               <span>&#128666; Garantierte Lieferung &#9889;</span>
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button"><span class="big-emoji">&#128073;</span> Buy now & Have fun <span class="big-emoji">&#128072;</span></a>
+         </div>
+      </div>
+
+   </header>
+</body>
+
+</html>
