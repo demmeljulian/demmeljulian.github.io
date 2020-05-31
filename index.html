@@ -30,7 +30,7 @@
       background: #fffdcd;
       max-width: 540px;
       outline: 10px solid #DDD455;
-      margin: 60px 30px;
+      margin: 60px 20px;
    }
 
    h1 {
@@ -54,7 +54,7 @@
       font-style: normal;
       text-shadow: 0 0 10px #FF0000;
       animation: glow 2s infinite;
-      margin-bottom: 0;
+      margin-bottom: 20px;
    }
 
    @keyframes shadow-pulse {
@@ -210,13 +210,13 @@
 
    .text {
       text-align: center;
-      margin: 50px 0 20px 0;
+      margin: 30px 0 0 0;
       transform: rotate(-10deg);
       overflow: hidden;
    }
 
    .product-image {
-      max-height: 260px;
+      max-height: 240px;
       padding: 1em;
       margin-bottom: 40px;
       animation: img 3s linear infinite;
@@ -245,6 +245,10 @@
       font-style: normal;
       line-height: 30px;
    }
+
+   .header-container {
+      overflow: hidden;
+   }
 </style>
 
 <head>
@@ -254,29 +258,32 @@
 
 <body>
    <header>
-      <div class="text">
-         <h1>
-            GARTEN<br>SCHLAUCH
-         </h1>
-         <h2>
-            Designed by<br>Julan Klein
-         </h2>
-      </div>
+      <div class="header-container">
 
-
-      <div class="wrapper">
-         <div class="content">
-            <img class="product-image" src="schlauch.png">
-            <div class="features">
-               <span>&#128181; Billig & willig &#128069;</span>
-               <span>&#128166; Spritzig & witzig &#129315;</span>
-               <span>&#127814; Gesund & bunt &#127813;</span>
-               <span>&#128089; One size fits all &#129421;</span>
-               <span>&#128666; Garantierte Lieferung &#9889;</span>
-            </div>
-
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button"><span class="big-emoji">&#128073;</span> Buy now & Have fun <span class="big-emoji">&#128072;</span></a>
+         <div class="text">
+            <h1>
+               GARTEN<br>SCHLAUCH
+            </h1>
+            <h2>
+               Designed by<br>Julan Klein
+            </h2>
          </div>
+
+         <div class="wrapper">
+            <div class="content">
+               <img class="product-image" src="schlauch.png">
+               <div class="features">
+                  <span>&#128181; Billig & willig &#128069;</span>
+                  <span>&#128166; Spritzig & witzig &#129315;</span>
+                  <span>&#127814; Gesund & bunt &#127813;</span>
+                  <span>&#128089; One size fits all &#129421;</span>
+                  <span>&#128666; Garantierte Lieferung &#9889;</span>
+               </div>
+
+               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button"><span class="big-emoji">&#128073;</span> Buy now & Have fun <span class="big-emoji">&#128072;</span></a>
+            </div>
+         </div>
+
       </div>
 
    </header>
